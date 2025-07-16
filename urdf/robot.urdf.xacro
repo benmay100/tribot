@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+
+<robot name="tribot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="modules/tribot_chassis_and_wheels.xacro" />
+    <xacro:include filename="gazebo_tags/gazebo_plugins.xacro" />
+    <xacro:include filename="gazebo_tags/gazebo_properties.xacro" />
+
+</robot>

@@ -1,0 +1,14 @@
+<launch>
+  <let name="urdf_path" value="$(find-pkg-share tribot_description)/urdf/robot.urdf.xacro"/>
+  <node pkg="robot_state_publisher" exec="robot_state_publisher">
+    <param name="robot_description" value="$(command 'xacro $(var urdf_path)')"/>
+    <!-- If robot urdf is NOT made of xacro files (just basic urdf), this needs to be...
+    <param name="robot_description" value="$(command 'cat $(var urdf_path)')"/> -->
+  </node>
+
+  <let name="rviz_config_path" value="$(find-pkg-share tribot_description)/rviz/tribot_config.rviz"/>
+  <node pkg="rviz2" exec="rviz2" output="screen" args="-d $(var rviz_config_path)"/>
+
+  <node pkg="joint_state_publisher_gui" exec="joint_state_publisher_gui"/>
+
+</launch>

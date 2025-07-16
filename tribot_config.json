@@ -1,0 +1,25 @@
+{
+  "documentId": "c4aa493c9127ef72e4e641df",
+  "outputFormat": "urdf",
+  "packageName": "tribot_description",
+  "robotName": "tribot",
+  "assemblyName": "TriBot",
+  "export_stl_with_meters": true,
+  "set_zero_mass_to_fixed": false,
+  "default_joint_type": "continuous",
+  "mesh_output_format": "stl",
+  "joint_properties": {
+      "default": {
+          "max_effort": 100,
+          "max_velocity": 100
+      },
+      "dof_wheelRight": {
+          "type": "revolute",
+          "limits": [-3.14, 3.14]
+      },
+      "dof_wheelLeft": {
+          "type": "revolute",
+          "limits": [-3.14, 3.14]
+      }
+  }
+}
