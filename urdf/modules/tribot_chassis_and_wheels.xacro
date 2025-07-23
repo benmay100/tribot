@@ -25,7 +25,7 @@
     <visual>
       <origin xyz="0 -0.001 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://tribot_description/assets/chassis.stl"/>
+        <mesh filename="package://${package_name}/assets/chassis.stl"/>
       </geometry>
       <material name="chassis_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -34,7 +34,7 @@
     <collision>
       <origin xyz="0 -0.001 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://tribot_description/assets/chassis.stl"/>
+        <mesh filename="package://${package_name}/assets/chassis.stl"/>
       </geometry>
     </collision>
   </link>
@@ -51,7 +51,7 @@
     <visual>
       <origin xyz="0 0 0.035" rpy="-1.5708 -0 0"/>
       <geometry>
-        <mesh filename="package://tribot_description/assets/driven_wheel.stl"/>
+        <mesh filename="package://${package_name}/assets/driven_wheel.stl"/>
       </geometry>
       <material name="driven_wheel_material">
         <color rgba="0.647059 0.647059 0.647059 1"/>
@@ -60,7 +60,7 @@
     <collision>
       <origin xyz="0 0 0.035" rpy="-1.5708 -0 0"/>
       <geometry>
-        <mesh filename="package://tribot_description/assets/driven_wheel.stl"/>
+        <mesh filename="package://${package_name}/assets/driven_wheel.stl"/>
       </geometry>
     </collision>
   </link>
@@ -85,7 +85,7 @@
     <visual>
       <origin xyz="0 0 0.035" rpy="-1.5708 -0 0"/>
       <geometry>
-        <mesh filename="package://tribot_description/assets/driven_wheel.stl"/>
+        <mesh filename="package://${package_name}/assets/driven_wheel.stl"/>
       </geometry>
       <material name="driven_wheel_2_material">
         <color rgba="0.647059 0.647059 0.647059 1"/>
@@ -94,7 +94,7 @@
     <collision>
       <origin xyz="0 0 0.035" rpy="-1.5708 -0 0"/>
       <geometry>
-        <mesh filename="package://tribot_description/assets/driven_wheel.stl"/>
+        <mesh filename="package://${package_name}/assets/driven_wheel.stl"/>
       </geometry>
     </collision>
   </link>
@@ -119,7 +119,7 @@
     <visual>
       <origin xyz="-0.0075 -0.0075 0.005" rpy="3.14159 -0 0"/>
       <geometry>
-        <mesh filename="package://tribot_description/assets/caster_frame.stl"/>
+        <mesh filename="package://${package_name}/assets/caster_frame.stl"/>
       </geometry>
       <material name="caster_frame_material">
         <color rgba="0.8 0.8 0.8 1"/>
@@ -128,7 +128,7 @@
     <collision>
       <origin xyz="-0.0075 -0.0075 0.005" rpy="3.14159 -0 0"/>
       <geometry>
-        <mesh filename="package://tribot_description/assets/caster_frame.stl"/>
+        <mesh filename="package://${package_name}/assets/caster_frame.stl"/>
       </geometry>
     </collision>
   </link>
@@ -154,7 +154,7 @@
     <visual>
       <origin xyz="0 0 0.0085" rpy="1.5708 -0 0"/>
       <geometry>
-        <mesh filename="package://tribot_description/assets/caster_wheel.stl"/>
+        <mesh filename="package://${package_name}/assets/caster_wheel.stl"/>
       </geometry>
       <material name="caster_wheel_material">
         <color rgba="0.956863 0.945098 0.945098 1"/>
@@ -163,7 +163,7 @@
     <collision>
       <origin xyz="0 0 0.0085" rpy="1.5708 -0 0"/>
       <geometry>
-        <mesh filename="package://tribot_description/assets/caster_wheel.stl"/>
+        <mesh filename="package://${package_name}/assets/caster_wheel.stl"/>
       </geometry>
     </collision>
   </link>
